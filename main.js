@@ -1,4 +1,4 @@
-function CreatePlayer(name = '', img = '', hp = 100) {
+function Player(name = '', img = '', hp = 100) {
     this.name = name;
     this.hp = hp;
     this.img = img;
@@ -39,8 +39,8 @@ function createPlayer(className, hero, healthPoints) {
     arenas.appendChild(player);
 }
 
-const player1 = new CreatePlayer('SCORPION', 'http://reactmarathon-api.herokuapp.com/assets/scorpion.gif', 50);
-const player2 = new CreatePlayer('SUB-ZERO','http://reactmarathon-api.herokuapp.com/assets/subzero.gif', 80);
+const player1 = new Player('SCORPION', 'http://reactmarathon-api.herokuapp.com/assets/scorpion.gif', 50);
+const player2 = new Player('SUB-ZERO','http://reactmarathon-api.herokuapp.com/assets/subzero.gif', 80);
 
 createPlayer('player1', player1, 50);
 createPlayer('player2', player2, 80);
